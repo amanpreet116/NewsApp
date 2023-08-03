@@ -4,9 +4,7 @@ const url = "https://newsapi.org/v2/everything?q=";
 //call fetch news function
 window.addEventListener('load', () => fetchNews("India"));
 
-function reload() {
-    window.location.reload();
-}
+
 //FETCH QUERY FROM THE API 
 async function fetchNews(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
